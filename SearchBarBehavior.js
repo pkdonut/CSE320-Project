@@ -1,3 +1,4 @@
 function searchBar(){
-  document.write("Hello World")
+ var x = document.getElementById("mySearch").value;
+  document.write(x);
 }
