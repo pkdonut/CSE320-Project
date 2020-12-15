@@ -26,6 +26,6 @@ filename = 'porductInfo.csv'
 with open(filename, 'w', newline='') as f:
     w = csv.DictWriter(f,['theme','url','img','lines','review'])
     w.writeheader()
-    for quote in quotes:
-        w.writerow(quote)
+    for product in product:
+        w.writerow(product)
 
