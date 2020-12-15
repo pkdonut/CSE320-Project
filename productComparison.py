@@ -12,8 +12,7 @@ product=[]  # a list to store products
 
 table = soup.find('div', attrs = {'id':'all_product'})
 
-for row in table.findAll('div',
-                         attrs = {'class':'col-6 col-lg-3 text-center margin-30px-bottom sm-margin-30px-top'}):
+for row in table.findAll('div', attrs = {'class':'col-7 col-lg-1 text-center margin-40px-bottom sm-margin-40px-top'}):
     product = {}
     product['theme'] = row.h5.text
     product['url'] = row.a['href']
